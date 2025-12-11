@@ -1,4 +1,3 @@
-// src/components/student/StudentProfile.tsx
 import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import type { Student } from '../../types';

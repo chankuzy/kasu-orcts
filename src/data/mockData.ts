@@ -1,15 +1,51 @@
 import type { Complaint, User } from "../types";
 
-
 export const MOCK_USERS: User[] = [
   // Admin
-  { id: "KASU/ADMIN/001", password: "admin", name: "Super Admin", role: "admin" } as User,
-  // Lecturer (Assigned to CSC 401)
-  { id: "KASU/STF/CS/012", password: "lecturer", name: "Dr. Adamu Umar", role: "lecturer", department: "Computer Science" } as User,
+  {
+    id: "KASU/ADMIN/001",
+    password: "admin",
+    name: "Super Admin",
+    role: "admin",
+    email: "admin@kasu.edu",
+    isActive: true,
+  },
+
+  // Lecturer
+  {
+    id: "KASU/STF/CS/012",
+    password: "lecturer",
+    name: "Dr. Adamu Umar",
+    role: "lecturer",
+    department: "Computer Science",
+    email: "adamu.umar@kasu.edu",
+    isActive: true,
+  },
+
   // Students
-  { id: "KASU/19/CS/1001", password: "student", name: "Aisha Musa", role: "student", department: "Computer Science", level: "400" } as User,
-  { id: "KASU/19/ENG/023", password: "student", name: "Bello Sani", role: "student", department: "Engineering", level: "300" } as User,
+  {
+    id: "KASU/19/CS/1001",
+    password: "student",
+    name: "Aisha Musa",
+    role: "student",
+    department: "Computer Science",
+    level: "400",
+    email: "aisha.musa@kasu.edu",
+    isActive: true,
+  },
+
+  {
+    id: "KASU/19/ENG/023",
+    password: "student",
+    name: "Bello Sani",
+    role: "student",
+    department: "Engineering",
+    level: "300",
+    email: "bello.sani@kasu.edu",
+    isActive: true,
+  },
 ];
+
 
 export const MOCK_COMPLAINTS: Complaint[] = [
   // ... (Complaint data remains the same structure, but now typed)
