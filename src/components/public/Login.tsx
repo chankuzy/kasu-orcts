@@ -1,6 +1,6 @@
 // src/components/public/Login.tsx
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 
 const Login: React.FC = () => {
@@ -92,9 +92,9 @@ const Login: React.FC = () => {
         <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
                 Are you a new student? 
-                <a href="/register" className="font-medium text-blue-900 hover:text-blue-700 ml-1">
+                <Link to="/register" className="font-medium text-blue-900 hover:text-blue-700 ml-1">
                     Register here
-                </a>
+                </Link>
             </p>
         </div>
       </div>
